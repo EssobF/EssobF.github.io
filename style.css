@@ -6,3 +6,6 @@ body {
     color: rgb(220, 216, 216);
     margin-left: 20px;
   }
+  p{
+    color : red;
+  }
