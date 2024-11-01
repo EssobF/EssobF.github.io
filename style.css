@@ -11,13 +11,13 @@ body {
   }
   .container{
     display: grid;
+    background-color: white;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px ;
     gap: 40px 20px; 
   }
 
   .item1{
-    background-color: white;
     grid-column: 1 / -1;
     grid-row: 1 / 1;
   }
