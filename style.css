@@ -17,6 +17,7 @@ body {
   }
 
   .item1{
+    color: white;
     grid-column: 1 / -1;
     grid-row: 1 / 1;
   }
