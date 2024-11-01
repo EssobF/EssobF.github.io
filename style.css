@@ -16,7 +16,7 @@ body {
     gap: 40px 20px; 
   }
 
-  .premiereF{
+  .item1{
     grid-column: 1 / -1;
     grid-row: 1 / 1;
   }
