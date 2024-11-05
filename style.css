@@ -14,23 +14,28 @@ body {
     background-color: rgb(52, 44, 44);
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px ;
+    
     gap: 40px 20px; 
-  
-  }
-  
-  .item1{
-    grid-column: 1 / -1;
-    grid-row: 1 / 1;
     border-radius: 25px;
     background: #73AD21;
     padding: 20px;
     width: 200px;
     height: 150px;
-    background-color: rgb(52, 44, 44);
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1{
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
   }
 
   .item2{
     grid-column: 2 / -1;
     grid-row: 2 / 2;
-    background-color: rgb(52, 44, 44);
   }
