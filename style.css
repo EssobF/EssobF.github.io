@@ -1,8 +1,8 @@
 body {
     background-color: rgb(95, 95, 100);
-    margin-left : 0px;
-    margin-right : 0px; 
+    margin: 0; 
     width: auto;
+    padding : 0;
   }
   
   h1 {
