@@ -12,7 +12,7 @@ body {
   .container{
     display: flex;
     column-gap: 20px;
-    background-color: rgb(52, 44, 44);
+    background-color: rgb(255, 255, 255);
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px ;
   }
