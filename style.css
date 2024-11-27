@@ -7,9 +7,16 @@ body {
   }
 
   .header {
+    display: flexbox;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+
+
+    overflow: hidden;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 100vw;
+    /*width: 100vw;*/
     text-align: center;
     background: rgb(42, 40, 40);
     color: white;
@@ -45,6 +52,7 @@ body {
 
   .container{
     display: flex;
+    flex-direction: row;
     margin: 0;  
     column-gap: 20px;
   
@@ -52,7 +60,7 @@ body {
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px ;
   }
-
+  
   .gridCase {
     
     gap: 40px 20px; 
@@ -85,4 +93,21 @@ body {
     font-size: 16px;
     padding: 10px 20px; /* horizontal and vertical padding */
     cursor: pointer; /* change cursor to a hand on hover */
+  
+  }
+  button:hover{
+    transform: scale(1.1);
+    transition: all 0.1s linear;
+  }
+
+  
+  @media (max-width: 768px) {
+    .container{
+      display: flex;
+      flex-direction: column;
+
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px 300px ;
+    }
+    
   }
