@@ -30,6 +30,11 @@ body {
     color: rgb(222, 218, 218);
     font-weight: bold;
   }
+  
+  h2{
+    color: rgb(222, 218, 218);
+  }
+
   p{
     color : rgb(222, 218, 218);
   }
@@ -62,7 +67,7 @@ body {
   }
   
   .gridCase {
-    
+    display: flex;
     gap: 40px 20px; 
     border-radius: 25px;
     border: 2px solid;
@@ -100,7 +105,17 @@ body {
     transition: all 0.1s linear;
   }
 
-  
+  img:hover{
+    transform: scale(1.1);
+    transition: all 0.1s linear;
+  }
+
+  span{
+    display: rflex;
+    align-items: center;
+    padding-top: 20px;
+  }
+
   @media (max-width: 768px) {
     .container{
       display: flex;
