@@ -118,15 +118,32 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     display: rflex;
-    align-items: center;
+    align-items: right;
     padding-top: 20px;
   }
-  .slide:hover{
+
+  .duoImageText{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    color: #fff;
+  }
+
+  .duoImageText img{
+    width: 60px;
+    height: 60 px;
+    object-fit: cover;
+  }
+
+  .duoImageText:hover .slide{
     visibility: visible;
     opacity: 1;
-    transform: scale(1.1);
     transition: all 0.1s linear;
   }
+
+
 
   @media (max-width: 768px) {
     .container{
