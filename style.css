@@ -42,7 +42,11 @@ body {
   p{
     color : rgb(222, 218, 218);
   }
-  
+
+  .EcritureBody {
+    font-size: smaller;
+    color : rgb(222, 218, 218);
+  }
 
   .banniere{
     display: flex;
@@ -74,6 +78,14 @@ body {
     /*Taille des colonnes > taille des lignes pour inclure les titres*/
     grid-template-rows: 300px 300px 300px ;
   }/*Contient toute les parties avec des cases*/
+  .container .colone{
+    flex-direction: column;
+    display: table-column;
+  }
+
+  .clickable :hover{
+    cursor: pointer; /* Change cursor to pointer */
+}
   
 
   
@@ -93,7 +105,7 @@ body {
 
 
 
-  .gridCase {
+  .gridCase{
     display: flex;
     flex-direction: column;
     gap: 40px 20px; 
@@ -110,8 +122,9 @@ body {
     max-width: 100%; /* Largeur maximale réduite */
     max-height: 100%; /* Hauteur maximale réduite */
     overflow: auto;
-}
- /*case visible contenant des infos*/
+  } /*case visible contenant des infos*/
+
+
 
 
   button {
@@ -130,7 +143,7 @@ body {
     transform: scale(1.1);
     transition: all 0.1s linear;
   }
-
+  
   img:hover{
     transform: scale(1.1);
     transition: all 0.1s linear;
