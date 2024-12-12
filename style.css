@@ -194,7 +194,30 @@ body {
 
       grid-template-columns: 300px 300px 300px;
       grid-template-rows: 300px 300px 300px ;
-    } /*Si je m'en rappelel c'était pour faire en sorte que
+    } /*Si je m'en rappel c'était pour faire en sorte que
      l'affichage soit responsive à la taille de la fenêtre*/
     
   }
+
+
+/*Scrollbar*/
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
