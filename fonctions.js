@@ -1,19 +1,23 @@
 let expandedElement = null; // Track the currently expanded element
 
+
 function Expension(element) {
     if (expandedElement && expandedElement !== element) {
         // Reset any previously expanded element
         expandedElement.style.transform = 'scale(1)';
+        expandedElement.style.zIndex='1';
     }
 
     if (element.style.transform === 'scale(1.5)') {
         // Shrink back to original size
         element.style.transform = 'scale(1)';
         expandedElement = null;
+        expandedElement.style.zIndex='1';
     } else {
         // Expand using scale
         element.style.transform = 'scale(1.5)';
         expandedElement = element;
+        expandedElement.style.zIndex='10';
     }
 }
 
@@ -24,4 +28,8 @@ document.addEventListener('click', (event) => {
         expandedElement.style.transform = 'scale(1)';
         expandedElement = null;
     }
+});
+
+window.addEventListener("scroll", function() {
+    document.querySelector(".header").style.transform = `translateX(${window.scrollX}px)`;
 });

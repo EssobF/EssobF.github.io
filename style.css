@@ -14,13 +14,13 @@ body {
 
 
     overflow: hidden;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     /*width: 100vw;*/
     text-align: center;
     background: rgb(42, 40, 40);
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     box-sizing: border-box;
     overflow-x: hidden;
     margin: 0;
@@ -50,28 +50,30 @@ body {
 
   .banniere{
     display: flex;
+    position:sticky;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0;  
-    column-gap: 20px;
-    padding: 10px;
+    margin: auto;  
+    column-gap: 16px;
+    padding: 8px;
     background-color: rgb(52, 44, 44);
-    border: 15px solid rgb(52, 44, 44);
+    border: 16px solid rgb(52, 44, 44);
     width: 100%;
-
     box-sizing: border-box;
+    top: 0;
+    left: 0;
   }
 
   .container{
     display: flex;
     flex-direction: row;
     margin: 0;  
-    column-gap: 20px;
+    column-gap: 16px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
     grid-auto-rows: 150px; /* Ajoute des lignes de 150px automatiquement */
-    gap: 10px;
+    gap: 8px;
     width: 100%;
     height: 100%;
     grid-template-columns: 400px 400px 400px;
@@ -108,8 +110,8 @@ body {
   .gridCase{
     display: flex;
     flex-direction: column;
-    gap: 40px 20px; 
-    border-radius: 25px;
+    gap: 32px 16px; 
+    border-radius: 16px;
     border: 2px solid;
     border-color: black;
     background: rgb(100, 90, 90);
@@ -122,7 +124,9 @@ body {
     max-width: 100%; /* Largeur maximale réduite */
     max-height: 100%; /* Hauteur maximale réduite */
     overflow: auto;
-  } /*case visible contenant des infos*/
+    box-shadow: 8px 8px 16px  rgba(0, 0, 0, 0.79),
+                4px 4px 8px rgba(238, 237, 237, 0.071);
+  } /*case visible contenant des infos*/ 
 
 
 
@@ -130,12 +134,12 @@ body {
   button {
     background-color: rgb(100, 90, 90);
     border: 2px solid;
-    border-radius: 10px;
+    border-radius: 12px;
     border-color: black;
     color: #fff; 
     font-family: Arial, sans-serif;
     font-size: 16px;
-    padding: 10px 20px; /* horizontal and vertical padding */
+    padding: 8px 16px; /* horizontal and vertical padding */
     cursor: pointer; /* change cursor to a hand on hover */
   
   }
@@ -158,7 +162,7 @@ body {
     transition: opacity 0.3s ease;
     display: rflex;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 16px;
   } /*Le texte qui s'affiche quand on survole le duoImageText plus bas*/
 
   .duoImageText{
@@ -166,7 +170,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    height: 40px;
+    height: 32px;
     width: 200px;
     color: #fff;
     flex-direction: column;
@@ -174,8 +178,8 @@ body {
   }
 
   .duoImageText img{
-    width: 60px;
-    height: 60 px;
+    width: 64px;
+    height: 64 px;
     object-fit: cover;
   }
 
@@ -187,15 +191,17 @@ body {
 
 
 
-  @media (max-width: 768px) {
+  @media (max-width:  768ppx) {
     .container{
       display: flex;
       flex-direction: column;
 
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 300px 300px 300px ;
+      grid-template-columns: 320px 320px 320px;
+      grid-template-rows: 320px 320px 320px ;
     } /*Si je m'en rappel c'était pour faire en sorte que
-     l'affichage soit responsive à la taille de la fenêtre*/
+     l'affichage soit responsive à la taille de la fenêtre
+     
+     DE PLUS, SI Y'A UN PB DE TAILLE DES GRIDCASE C'EST SUREMENT LA*/
     
   }
 
@@ -204,7 +210,7 @@ body {
 
   /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 /* Track */
@@ -214,7 +220,7 @@ body {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: rgb(50, 46, 46)
 }
 
 /* Handle on hover */
