@@ -18,6 +18,9 @@ function Expension(element) {
         element.style.transform = 'scale(1.5)';
         expandedElement = element;
         expandedElement.style.zIndex='10';
+        var marginLeft = $(this).css({"margin-left":(windowWidth-divWidth)/2});
+        var margintop = $(this).css({"margin-top":(windowHeight-divHeight)/2});
+
     }
 }
 
