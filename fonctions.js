@@ -6,6 +6,7 @@ function Expension(element) {
         // Reset any previously expanded element
         expandedElement.style.transform = 'scale(1)';
         expandedElement.style.zIndex='1';
+        expandedElement.style.position="absolute";
         expandedElement = null;
     }
 
@@ -13,6 +14,7 @@ function Expension(element) {
         // Shrink back to original size
         element.style.transform = 'scale(1)';
         expandedElement.style.zIndex='1';
+        expandedElement.style.position ="absolute";
         expandedElement = null;
     } else {
         // Expand using scale
@@ -21,15 +23,11 @@ function Expension(element) {
         expandedElement.style.zIndex='10';
 
         //ça c'est une tentative de centrage après click
-        expandedElement.position = "absolute";
-        var wy = window.innerHeight / 2;
-        var wx = window.innerWidth / 2;
-        var py = element.offsetHeight / 2;
-        var px = element.offsetWidth / 2;
-        var pageTop = wy - py;
-        var pageLeft = wx - px;
-        expandedElement.style.top = pageTop + "px";
-        expandedElement.style.left = pageLeft + "px";
+        expandedElement.style.position = "fixed"; 
+        expandedElement.style.top = "50px";
+        expandedElement.style.left = "50px";
+        expandedElement.style.height= "30%";
+        expandedElement.style.width="30%"
     }
 }
 
