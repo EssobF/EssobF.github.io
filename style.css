@@ -70,7 +70,6 @@ body {
     flex-direction: row;
     margin: 0;  
     column-gap: 16px;
-    overflow-wrap: break-word;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
     grid-auto-rows: 150px; /* Ajoute des lignes de 150px automatiquement */
@@ -212,23 +211,19 @@ body {
   /* width */
 ::-webkit-scrollbar {
   width: 12px;
-  border-radius: 16px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffeeeea0;
-  border-radius: 16px;
+  background: #f1f1f1; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(50, 46, 46);
-  border-radius: 16px;
+  background: rgb(50, 46, 46)
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  border-radius: 16px; 
+  background: #555; 
 }
