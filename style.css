@@ -68,7 +68,7 @@ body {
   .container{
     display: flex;
     flex-direction: row;
-    margin: 0;  
+    margin: 0px;  
     column-gap: 16px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
@@ -80,10 +80,7 @@ body {
     /*Taille des colonnes > taille des lignes pour inclure les titres*/
     grid-template-rows: 300px 300px 300px ;
   }/*Contient toute les parties avec des cases*/
-  .container .colone{
-    flex-direction: column;
-    display: table-column;
-  }
+
 
   .clickable :hover{
     cursor: pointer; /* Change cursor to pointer */
@@ -94,7 +91,10 @@ body {
   .boiteTransparente{
     display: flex;
     flex-direction: row;
-  }/*Contient ET les cases, ET Les titres, fait occupe le container mais n'est pas visible,
+    flex-wrap: auto;
+    box-sizing: border-box;
+  }
+  /*Contient ET les cases, ET Les titres, fait occupe le container mais n'est pas visible,
   
   En exemple d'utilisation y'a ça
 
@@ -102,7 +102,12 @@ body {
 
    pour une boite transparente allant de la colone 1 à la colone 1 et de la ligne 1 à la ligne 2 
    (oui c'est normal 3 = 2 on dirait que ça fonctionne par n-1 sauf pour le 1 qui est égal à 1) */
-  
+  .boiteTransparente .marge{
+    margin-left:16px;
+    margin-right: 16px;
+    width: calc(100vw-32px);
+    box-sizing: border-box;
+  }
 
 
 
@@ -128,6 +133,11 @@ body {
                 4px 4px 8px rgba(238, 237, 237, 0.071);
   } /*case visible contenant des infos*/ 
 
+  .gridCase .marge {
+    margin-left : 16px;
+    margin-right: 16px;
+    width: calc(100vw-32px);
+  }
 
 
 
